@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="40" viewBox="0 0 84 40">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .fade { opacity: 0; animation: up .9s cubic-bezier(.2,.8,.2,1) forwards; }
+    .d1 { animation-delay: .1s; } .d2 { animation-delay: .25s; }
+    .d3 { animation-delay: .4s; } .d4 { animation-delay: .55s; }
+    @keyframes up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { .fade { animation: none; opacity: 1; } }
+  </style>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#2997ff"/><stop offset="1" stop-color="#a259ff"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.15" cy="0.3" r="0.55">
+      <stop offset="0" stop-color="#2997ff" stop-opacity="0.22"/><stop offset="1" stop-color="#2997ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.88" cy="0.75" r="0.55">
+      <stop offset="0" stop-color="#a259ff" stop-opacity="0.20"/><stop offset="1" stop-color="#a259ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+<rect x="0.75" y="0.75" width="82.5" height="38.5" rx="19.25" fill="#000000" stroke="#2997ff" stroke-width="1.5"/>
+<text x="42.0" y="25.5" font-size="15" font-weight="500" fill="#2997ff" text-anchor="middle" letter-spacing="-0.02em">Email</text>
+</svg>
