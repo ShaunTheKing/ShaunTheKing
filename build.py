@@ -14,7 +14,7 @@ INK_3 = "#86868b"
 TILE = "#000000"
 TILE_2 = "#1d1d1f"
 CHIP = "#2c2c2e"
-BLUE = "#ff453a"  # accent (links, buttons)
+BLUE = "#2997ff"  # accent (links, buttons)
 ORANGE = "#f56300"
 
 STYLE = f"""
@@ -30,7 +30,7 @@ STYLE = f"""
 GRADS = """
   <defs>
     <linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0" stop-color="#ff6a5c"/><stop offset="1" stop-color="#c8102e"/>
+      <stop offset="0" stop-color="#2997ff"/><stop offset="1" stop-color="#0058d0"/>
     </linearGradient>
   </defs>"""
 
@@ -136,7 +136,7 @@ def button(label, primary):
     w = int(text_w(label, size) + 44)
     h = 40
     if primary:
-        shape = f'<rect width="{w}" height="{h}" rx="20" fill="#d70015"/>'
+        shape = f'<rect width="{w}" height="{h}" rx="20" fill="#0071e3"/>'
         fill = "#ffffff"
     else:
         shape = f'<rect x="0.75" y="0.75" width="{w-1.5}" height="{h-1.5}" rx="19.25" fill="{TILE}" stroke="{BLUE}" stroke-width="1.5"/>'
