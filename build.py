@@ -14,7 +14,7 @@ INK_3 = "#86868b"
 TILE = "#000000"
 TILE_2 = "#1d1d1f"
 CHIP = "#2c2c2e"
-BLUE = "#2997ff"
+BLUE = "#ff453a"  # accent (links, buttons)
 ORANGE = "#f56300"
 
 STYLE = f"""
@@ -30,13 +30,13 @@ STYLE = f"""
 GRADS = """
   <defs>
     <linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0" stop-color="#2997ff"/><stop offset="1" stop-color="#a259ff"/>
+      <stop offset="0" stop-color="#ff6a5c"/><stop offset="1" stop-color="#c8102e"/>
     </linearGradient>
     <radialGradient id="glowA" cx="0.15" cy="0.3" r="0.55">
-      <stop offset="0" stop-color="#2997ff" stop-opacity="0.22"/><stop offset="1" stop-color="#2997ff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#ff3b30" stop-opacity="0.24"/><stop offset="1" stop-color="#ff3b30" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowB" cx="0.88" cy="0.75" r="0.55">
-      <stop offset="0" stop-color="#a259ff" stop-opacity="0.20"/><stop offset="1" stop-color="#a259ff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#8b0000" stop-opacity="0.30"/><stop offset="1" stop-color="#8b0000" stop-opacity="0"/>
     </radialGradient>
   </defs>"""
 
@@ -147,7 +147,7 @@ def button(label, primary):
     w = int(text_w(label, size) + 44)
     h = 40
     if primary:
-        shape = f'<rect width="{w}" height="{h}" rx="20" fill="#0071e3"/>'
+        shape = f'<rect width="{w}" height="{h}" rx="20" fill="#d70015"/>'
         fill = "#ffffff"
     else:
         shape = f'<rect x="0.75" y="0.75" width="{w-1.5}" height="{h-1.5}" rx="19.25" fill="{TILE}" stroke="{BLUE}" stroke-width="1.5"/>'

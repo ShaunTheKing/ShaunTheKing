@@ -9,13 +9,13 @@
   </style>
   <defs>
     <linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0" stop-color="#2997ff"/><stop offset="1" stop-color="#a259ff"/>
+      <stop offset="0" stop-color="#ff6a5c"/><stop offset="1" stop-color="#c8102e"/>
     </linearGradient>
     <radialGradient id="glowA" cx="0.15" cy="0.3" r="0.55">
-      <stop offset="0" stop-color="#2997ff" stop-opacity="0.22"/><stop offset="1" stop-color="#2997ff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#ff3b30" stop-opacity="0.24"/><stop offset="1" stop-color="#ff3b30" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowB" cx="0.88" cy="0.75" r="0.55">
-      <stop offset="0" stop-color="#a259ff" stop-opacity="0.20"/><stop offset="1" stop-color="#a259ff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#8b0000" stop-opacity="0.30"/><stop offset="1" stop-color="#8b0000" stop-opacity="0"/>
     </radialGradient>
   </defs>
 <rect width="412" height="300" rx="28" fill="#1d1d1f"/>
@@ -30,5 +30,5 @@
 <text x="161.26" y="225.5" font-size="13" font-weight="400" fill="#a1a1a6" text-anchor="middle" letter-spacing="-0.02em">Hugging Face</text>
 <rect x="221.38" y="208" width="76" height="26" rx="13" fill="#2c2c2e"/>
 <text x="259.46" y="225.5" font-size="13" font-weight="400" fill="#a1a1a6" text-anchor="middle" letter-spacing="-0.02em">Mind2Web</text>
-<text x="32" y="270" font-size="15" font-weight="400" fill="#2997ff" text-anchor="start" letter-spacing="-0.02em">Model card  ›</text>
+<text x="32" y="270" font-size="15" font-weight="400" fill="#ff453a" text-anchor="start" letter-spacing="-0.02em">Model card  ›</text>
 </svg>
