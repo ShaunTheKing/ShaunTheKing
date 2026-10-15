@@ -32,12 +32,6 @@ GRADS = """
     <linearGradient id="g" x1="0" x2="1" y1="0" y2="0">
       <stop offset="0" stop-color="#ff6a5c"/><stop offset="1" stop-color="#c8102e"/>
     </linearGradient>
-    <radialGradient id="glowA" cx="0.15" cy="0.3" r="0.55">
-      <stop offset="0" stop-color="#ff3b30" stop-opacity="0.24"/><stop offset="1" stop-color="#ff3b30" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glowB" cx="0.88" cy="0.75" r="0.55">
-      <stop offset="0" stop-color="#8b0000" stop-opacity="0.30"/><stop offset="1" stop-color="#8b0000" stop-opacity="0"/>
-    </radialGradient>
   </defs>"""
 
 
@@ -74,8 +68,6 @@ def hero():
     w, h = 840, 400
     body = f"""
 <rect width="{w}" height="{h}" rx="28" fill="{TILE}"/>
-<rect width="{w}" height="{h}" rx="28" fill="url(#glowA)"/>
-<rect width="{w}" height="{h}" rx="28" fill="url(#glowB)"/>
 {t(w/2, 112, "Shaun Salvador Andrade", 21, INK_3, 600, "middle", "fade d1")}
 {t(w/2, 186, "Software that thinks.", 60, INK, 700, "middle", "fade d2")}
 {t(w/2, 256, "Built to ship.", 60, "url(#g)", 700, "middle", "fade d3")}
@@ -107,13 +99,10 @@ def section(title, sub):
     return svg(w, h, f'<rect width="{w}" height="{h}" rx="24" fill="{TILE}"/>\n{body}')
 
 
-def card(tag, tag_color, title, lines, stack, link, glow=False):
+def card(tag, tag_color, title, lines, stack, link):
     w, h = 412, 300
     p = 32
     parts = [f'<rect width="{w}" height="{h}" rx="28" fill="{TILE_2}"/>']
-    if glow:
-        parts.append(f'<rect width="{w}" height="{h}" rx="28" fill="url(#glowA)"/>')
-        parts.append(f'<rect width="{w}" height="{h}" rx="28" fill="url(#glowB)"/>')
     parts.append(t(p, 50, tag, 13, tag_color, 600))
     parts.append(t(p, 92, title, 30, INK, 600))
     for i, ln in enumerate(lines):
@@ -165,7 +154,7 @@ def main():
                            ["Local-first multi-agent workspace. Each",
                             "agent is an isolated Cordis context with",
                             "its own plugins, memory, skills and tools."],
-                           ["TypeScript", "React", "Electron", "SQLite"], "View on GitHub", glow=True),
+                           ["TypeScript", "React", "Electron", "SQLite"], "View on GitHub"),
         "laya.svg": card("Machine Learning · 2026", INK_3, "Laya Browser Agent.",
                          ["Fine-tuned a 421M-param model on Mind2Web",
                           "to predict the next browser action. 74.3%",
